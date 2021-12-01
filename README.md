@@ -4,15 +4,14 @@ The main tool is **LTESnifferRunner.py**. Check the Config folder and adjust the
 
 The code itself is wrapper for the HackRF and LTECellSearch command line tools.
 
-This tool performs a search on the known 4G bandwidths and performs then a recording of the PBCH channel.
+This tool performs a search on the known 4G bandwidths and performs then a recording of the PBCH channels.
 
-It uses the bandwith definitions of the Austrian telecom regulator RTR GmbH to map frequences to one of the 3 Austrian providers (3, Magenta, A1).
+It uses the bandwith definitions of the Austrian telecom regulator RTR GmbH to map frequencies to one of the 3 Austrian providers (3, Magenta, A1).
 
 You can then use 4G suite of MATLAB for extracting the MIB/SIB of the LTE cells.
 
-You need a [HackRF One SDR](https://greatscottgadgets.com/hackrf/one/) with the latest firmware.
-
 # Requirements
+You need a [HackRF One SDR](https://greatscottgadgets.com/hackrf/one/) with the latest firmware.
 * HackRFOne
 * libblas
 * libitpp
