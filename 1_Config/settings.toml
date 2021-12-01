@@ -1,0 +1,47 @@
+[LTESniffer]
+  [LTESniffer.general]
+  scan_id = "chicken_village_2021"
+  base_dir = "3_Collected_Data/"
+  regions = ["national", "A03u", "A03r"]
+
+  [LTESniffer.search]
+  enable = true
+  scan_config = "frequency_bands_austria.json"
+  rescan = true
+  results_dir = "1_Searched_Cells/"
+  # step width in 100KHz steps
+  # The scan will run with this step width to search for peaks.
+  # The area around peaks will be then scanned width a width of 100KHz.
+  # Format: 1 = 100kHz, 5 = 500KHz, etc
+  # Allowed: 1 - 10
+  step_width = 9
+
+  [LTESniffer.record]
+  enable = false
+  results_dir = "2_hackrf_transfer/"
+
+  # RX / TX RF amplifier
+  amp_enable = false
+
+  # Antenna port power
+  antenna_enable = false
+
+  # RX LNA (IF) gain, 0-40dB, 8dB steps
+  l_gain = 40
+
+  # RX VGA(baseband) gain, 0-62dB, 2dB steps
+  g_gain = 40
+
+  # Sample rate in Hz (4/8/10/12.5/16/19.2/20MHz)
+  sample_rate = 19.2e6
+
+  # recording_time in seconds
+  recording_time = 1.0
+  
+  # baseband filter bandwidth in Hz
+  # Possible values: 1.75/2.5/3.5/5/5.5/6/7/8/9/10/12/14/15/20/24/28MHz
+  baseband_filter_bw = 20e6
+
+  [LTESniffer.matlab]
+  enable = false
+

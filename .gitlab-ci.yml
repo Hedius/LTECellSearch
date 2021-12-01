@@ -1,0 +1,29 @@
+image: python:3
+
+stages:
+  - Config Valid
+  - Code Quality
+
+flake8:
+  stage: Code Quality
+  tags:
+    - docker
+  script:
+    - python -m pip install flake8
+    - flake8 LTESnifferRunner.py LTESniffer
+
+Pylama:
+  stage: Code Quality
+  tags:
+    - docker
+  script:
+    - python -m pip install pylama
+    - pylama LTESnifferRunner.py LTESniffer
+
+Validate Config:
+  stage: Config Valid
+  tags:
+    - docker
+  script:
+    - python -m pip install -r requirements.txt
+    - python LTESnifferRunner.py -vc --disable-log-file

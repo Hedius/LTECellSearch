@@ -1,0 +1,6 @@
+2_Logs/
+*hackrf_transfer*
+.idea/
+venv/
+*__pycache__*
+frequency_assignments.json

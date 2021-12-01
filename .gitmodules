@@ -1,0 +1,12 @@
+[submodule "QCSuper"]
+	path = QCSuper
+	url = https://github.com/P1sec/QCSuper.git
+[submodule "LTE-Cell-Scanner"]
+	path = LTE-Cell-Scanner
+	url = https://github.com/Hedius/LTE-Cell-Scanner.git
+[submodule "itpp"]
+	path = itpp
+	url = https://git.code.sf.net/p/itpp/git
+[submodule "openlte-code"]
+	path = openlte-code
+	url = https://gitlab.com/Hedius/openlte/

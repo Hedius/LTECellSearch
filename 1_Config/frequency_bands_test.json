@@ -1,0 +1,20 @@
+[
+  {
+    "start": 815000000,
+    "end": 817000000,
+    "scanned_ids": [
+      "chicken_village",
+      "test"
+    ],
+    "scan": true
+  },
+  {
+    "start": 200000000,
+    "end": 200300000,
+    "scanned_ids": [
+      "chicken_village",
+      "test"
+    ],
+    "scan": false
+  }
+]

@@ -1,0 +1,41 @@
+[LTESniffer]
+  [LTESniffer.general]
+  scan_id = { must_exist = true }
+  regions = { must_exist = true }
+  base_dir = { must_exist = true }
+
+  [LTESniffer.search]
+  enable = { must_exist = true }
+  scan_config = { must_exist = true }
+  rescan =  { must_exist = true }
+  results_dir = { must_exist = true }
+  step_width = {must_exist = true, is_type_if = 'int', lte=10, gte=1}
+
+  [LTESniffer.record]
+  enable = { must_exist = true }
+  results_dir = { must_exist = true }
+
+  # RX / TX RF amplifier
+  amp_enable = { must_exist = true }
+
+  # Antenna port power
+  antenna_enable = { must_exist = true }
+
+  # RX LNA (IF) gain, 0-40dB, 8dB steps
+  l_gain = { must_exist = true, is_type_of = 'int', is_in = [0, 8, 16, 24, 32, 40]}
+
+  # RX VGA(baseband) gain, 0-62dB, 2dB steps
+  g_gain = { must_exist = true, is_type_of = 'int', is_in = []}
+
+  # Sample rate in Hz (4/8/10/12.5/16/20MHz)
+  sample_rate = { must_exist = true, is_type_of = 'float', is_in = [4e6, 8e6, 10e6, 12.5e6, 16e6, 20e6]}
+
+  # recording_time in seconds
+  recording_time = { must_exist = true, is_type_of = 'float', gte = 10}
+  
+  # baseband filter bandwidth in Hz
+  # Possible values: 1.75/2.5/3.5/5/5.5/6/7/8/9/10/12/14/15/20/24/28MHz
+  baseband_filter_bw = { must_exist = true, is_type_of = 'float', is_in = [1.75e6, 2.5e6, 3.5e6, 5e6, 5.5e6, 6e6, 7e6, 8e6, 9e6, 10e6, 12e6, 14e6, 15e6, 20e6, 24e6, 28e6]}
+
+  [LTESniffer.matlab]
+  enable = { must_exist = true }

@@ -1,0 +1,83 @@
+[
+  {
+    "start": 758000000,
+    "end": 788000000,
+    "scanned_ids": [
+      "chicken_village",
+      "chicken_village_2021"
+    ],
+    "scan": true
+  },
+  {
+    "start": 791000000,
+    "end": 821000000,
+    "scanned_ids": [
+      "chicken_village",
+      "chicken_village_2021"
+    ],
+    "scan": true
+  },
+  {
+    "start": 925000000,
+    "end": 960000000,
+    "scanned_ids": [
+      "chicken_village",
+      "chicken_village_2021"
+    ],
+    "scan": true
+  },
+  {
+    "start": 1427000000,
+    "end": 1517000000,
+    "scanned_ids": [
+      "chicken_village",
+      "chicken_village_2021"
+    ],
+    "scan": true
+  },
+  {
+    "start": 1805000000,
+    "end": 1880000000,
+    "scanned_ids": [
+      "chicken_village",
+      "chicken_village_2021"
+    ],
+    "scan": true
+  },
+  {
+    "start": 2110000000,
+    "end": 2170000000,
+    "scanned_ids": [
+      "chicken_village",
+      "chicken_village_2021"
+    ],
+    "scan": true
+  },
+  {
+    "start": 2620000000,
+    "end": 2690000000,
+    "scanned_ids": [
+      "chicken_village",
+      "chicken_village_2021"
+    ],
+    "scan": true
+  },
+  {
+    "start": 2570000000,
+    "end": 2620000000,
+    "scanned_ids": [
+      "chicken_village",
+      "chicken_village_2021"
+    ],
+    "scan": true
+  },
+  {
+    "start": 3400000000,
+    "end": 3800000000,
+    "scanned_ids": [
+      "chicken_village",
+      "chicken_village_2021"
+    ],
+    "scan": true
+  }
+]
