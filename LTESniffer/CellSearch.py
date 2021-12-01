@@ -492,14 +492,14 @@ class CellSearch:
             # process all cells of the band
             for cell_id, cell_dict in band_dict["cells"].items():
                 cell = Cell(
-                        scan_id=cell_dict["scan_id"],
-                        cell_id=int(cell_id),
-                        frequency_center=cell_dict["frequency_center"],
-                        frequency_offset=cell_dict["frequency_offset"],
-                        dpx=cell_dict["dpx"],
-                        rx_power=cell_dict["rx_power"],
-                        data=cell_dict
-                    )
+                    scan_id=cell_dict["scan_id"],
+                    cell_id=int(cell_id),
+                    frequency_center=cell_dict["frequency_center"],
+                    frequency_offset=cell_dict["frequency_offset"],
+                    dpx=cell_dict["dpx"],
+                    rx_power=cell_dict["rx_power"],
+                    data=cell_dict
+                )
                 cell.operator_id = cell_dict["operator_id"]
                 cell.operator = cell_dict["operator"]
                 cell.operator = cell_dict["band"]
