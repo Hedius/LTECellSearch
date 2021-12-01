@@ -8,7 +8,7 @@ This tool performs a search on the known 4G bandwidths and performs then a recor
 
 It uses the bandwith definitions of the Austrian telecom regulator RTR GmbH to map frequencies to one of the 3 Austrian providers (3, Magenta, A1).
 
-You can then use 4G suite of MATLAB for extracting the MIB/SIB of the LTE cells.
+You can then use the 4G suite of MATLAB for extracting the MIB/SIB of the LTE cells.
 
 # Requirements
 You need a [HackRF One SDR](https://greatscottgadgets.com/hackrf/one/) with the latest firmware.
